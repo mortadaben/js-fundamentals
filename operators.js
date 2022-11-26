@@ -36,8 +36,10 @@ if (condition1) {
 }
 
 // - ternary operator (condition ? exprIfTrue : exprIfFalse)
-// ex: var age = 18;
-// var canDrive = (age >= 18) ? "yes" : "no";
+// ex:
+var age = 18;
+var canDrive = (age >= 18) ? "yes" : "no";
+console.log(canDrive); // "yes"
 
 //switch statement
 switch (expression) {
