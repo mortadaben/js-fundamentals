@@ -34,11 +34,7 @@ var isOnline = true;
 var country = "algerie"
 
 //- Declare variables to store your first name, last name, country and age(number) in a single line
-var firstname = "hamza",
-    lastname = "ben hamida",
-    
-    country = "algerie",
-    age = 25;
+var firstname = "hamza",lastname = "ben hamida",country = "algerie",age = 25;
 
 // - Declare two variables myAge and yourAge and assign them initial values and log to the browser console like this :
 //   I am 25 years old.
