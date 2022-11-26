@@ -33,10 +33,10 @@ var lastname = "ben hamida"
 var isOnline = true;
 var country = "algerie"
 
-//- Declare variables to store your first name, last name, marital status, country and age(number) in a single line
+//- Declare variables to store your first name, last name, country and age(number) in a single line
 var firstname = "hamza",
     lastname = "ben hamida",
-    maritalStatus = "single",
+    
     country = "algerie",
     age = 25;
 
