@@ -17,22 +17,24 @@ let name = "hamza";
 
 // Boolean
 var isonline = true;
-console.log(typeof isonline); // boolean
+console.log(typeof isonline);
 
 // string
-const firstName = "hamza";
+
 
 // concatenation of strings
+
+const firstName = "hamza";
 const secondname = "Chebbah";
 const resulat = firstName + " " + secondname;
-console.log(resulat); // hamza Chebbah
+console.log(resulat); //hamzachebbah 
 console.log(typeof resulat); // string
 
 // length (longueur de la chaine de caractere)
-console.log(firstName.length); // 5
+console.log(firstName.length); //5
 
 // uppercase (mettre en majuscule)
-console.log(firstName.toUpperCase()); // HAMZA
+console.log(firstName.toUpperCase()); //HAMZA
 
 //numbers
 const a = 40;
@@ -46,19 +48,19 @@ const pi = Math.PI;
 console.log(pi); // 3.141592653589793
 
 // round (arrondir)
-const num = Math.round(2.4); // 2
-const num2 = Math.round(2.5); // 3
-const num3 = Math.round(-2.4); // -2
+const num = Math.round(2.4); //2
+const num2 = Math.round(2.5); //3
+const num3 = Math.round(-2.4); //-2
 
 // ceil (arrondir vers le haut)
-const Num = Math.ceil(2.4); // 3
-const Num2 = Math.ceil(2.5); // 3
-const Num3 = Math.ceil(-2.4); // -2
+const Num = Math.ceil(2.4); //3
+const Num2 = Math.ceil(2.5); //3
+const Num3 = Math.ceil(-2.4); //-2
 
 // floor (arrondir vers le bas)
-const NUM = Math.floor(2.4); // 2
-const NUM2 = Math.floor(2.5); // 2
-const NUM3 = Math.floor(-2.4); // -3
+const NUM = Math.floor(2.4); //2
+const NUM2 = Math.floor(2.5); //2
+const NUM3 = Math.floor(-2.4); //-3
 
 // --------------------------- Arrays ---------------------------
 // arrays (tableau)
@@ -66,19 +68,20 @@ const arr = [1, 2, 3, 4, 5];
 console.log(arr); // [1, 2, 3, 4, 5]
 
 let fruits = ["apple", "orange", "banana"];
-console.log(fruits); // ["apple", "orange", "banana"]
+console.log(fruits);
 
 const mixed = ["apple", 1, true, null, undefined];
-console.log(mixed); // ["apple", 1, true, null, undefined]
+console.log(mixed);
 
 // array methods
-console.log(fruits.length); // 3 (longueur du tableau)
-console.log(fruits[0]); // apple (premier element du tableau)
-console.log(fruits[1]); // orange (deuxieme element du tableau)
+console.log(fruits.length); //3
+console.log(fruits[0]); // apple
+console.log(fruits[1]); // orange
 
 // add to array to the end
 fruits.push("strawberry");
 console.log(fruits); // ["apple", "orange", "banana", "strawberry"]
+
 
 // remove last element from array
 fruits.pop();
@@ -95,25 +98,27 @@ console.log(fruits); // ["apple", "orange", "banana"]
 
 
 // indexof (retourne l'index de l'element)
-console.log(fruits.indexOf("orange")); // 1
+console.log(fruits.indexOf("orange")); //1
 
 // splice (supprimer un element du tableau)
-fruits.splice(1, 1); // supprimer l'element a l'index 1
-console.log(fruits); // ["apple", "banana"]
+fruits.splice(1, 1);
+console.log(fruits); //["apple", "banana"]
 
-// splice many elements
+// splice many elements (supprimer plusieurs elements du tableau)
 fruits = ["apple", "orange", "banana", "strawberry"];
-fruits.splice(1, 2); // supprimer 2 elements a partir de l'index 1 
+var newarr2 = fruits.splice(1, 2);
+
 console.log(fruits); // ["apple", "strawberry"]
 
 // slice (copier une partie d'un tableau)
 fruits = ["apple", "orange", "banana", "strawberry"];
-const newarr = fruits.slice(1, 3); // commence a l'index 1 et s'arrete a juste avant l'index 3 
+const newarr = fruits.slice(1, 3);
 console.log(newarr); // ["orange", "banana"]
+console.log(fruits) //["apple", "orange", "banana", "strawberry"]
 
 // reverse (inverser un tableau)
 fruits.reverse();
-console.log(fruits); // ["strawberry", "banana", "orange", "apple"]
+console.log(fruits); //["strawberry", "banana", "orange", "apple"]
 
 
 
@@ -122,7 +127,7 @@ const person = {
     firstName: "hamza", // string
     lastName: "Chebbah",
     age: 20, // number
-    hobbies: ["music", "movies", "sports"], // array
+    hobbies: ["music", "movies", "sports", ], // array
     address: { // objet inside objet
         city: "tunis",
         street: "rue 1"
@@ -130,7 +135,7 @@ const person = {
 };
 
 // get elemtents from object
-console.log(person.firstName); // hamza
+console.log(person.firstName) // hamza
 console.log(person.hobbies[1]); // movies
 console.log(person.address.city); // tunis
 
@@ -158,9 +163,6 @@ const todos = [{
 // get elements from array of objects
 console.log(todos[1].text); // meeting with boss
 
-// convert to JSON
-const todoJSON = JSON.stringify(todos);
-console.log(todoJSON); // [{"id":1,"text":"take out trash","isCompleted":true},{"id":2,"text":"meeting with boss","isCompleted":true},{"id":3,"text":"dentist appt","isCompleted":false}]
 
 // object literals
 const human = {
@@ -173,8 +175,8 @@ const human = {
         street: "rue 1"
     },
     getBirthYear: function() {
-        return 2020 - this.age; // this = the current object (human)
+        return 2020 - this.age;
     }
 };
 
-console.log(human.getBirthYear()); // 2000
+console.log(human.getBirthYear()); //2000

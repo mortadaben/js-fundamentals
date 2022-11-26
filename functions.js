@@ -16,8 +16,10 @@ function add(a, b) {
 }
 console.log(add(5, 6)) // 11
 
-// function expression
-var add = function(a, b) {
+// function expression same as above
+// but we can't call the function before it's declared
+
+var addNumbers = function(a, b) {
     return a + b
 }
-console.log(add(5, 6)) // 11
+console.log(addNumbers(5, 6)) // 11

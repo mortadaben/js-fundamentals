@@ -1,10 +1,11 @@
 // - assignment operators (=, +=, -=, *=, /=, %=, **=)
 
 // "=" is an assignment operator
-// += equivalent to x = x + y
+// x+=y equivalent to x = x + y
 // -= equivalent to x = x - y
 /* *= equivalent to x = x * y */
 // /= equivalent to x = x / y
+
 
 // - comparison operators (==, ===, !=, !==, >, <, >=, <=)
 // comparison operators return a boolean value (true or false)
@@ -35,7 +36,7 @@ if (condition1) {
 
 }
 
-// - ternary operator (condition ? exprIfTrue : exprIfFalse)
+// - ternary operator (condition ? exprIfTrue : condition2 ? fdfdsfds: exprIfFalse)
 // ex:
 var age = 18;
 var canDrive = (age >= 18) ? "yes" : "no";
@@ -45,10 +46,11 @@ console.log(canDrive); // "yes"
 switch (expression) {
     case value1:
         // code to execute if expression === value1
+
         break;
     case value2:
-
         // code to execute if expression === value2
+
         break;
     default:
         // code to execute if expression does not match any case
@@ -57,11 +59,11 @@ switch (expression) {
 //ex:
 var day = "Monday";
 switch (day) {
-    case "Monday":
-        console.log("Today is Monday");
-        break;
     case "Tuesday":
         console.log("Today is Tuesday");
+        break;
+    case "Monday":
+        console.log("Today is Monday"); // this will be executed
         break;
     default:
         console.log("Today is not Monday or Tuesday");
